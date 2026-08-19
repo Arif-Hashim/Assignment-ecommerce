@@ -1,0 +1,48 @@
+.filter-sidebar {
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-md);
+  padding: 22px;
+}
+.filter-sidebar__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.filter-sidebar__header h3 { font-size: 18px; font-weight: 600; }
+
+.filter-group { padding: 18px 0; }
+.filter-group h4 { font-size: 15px; font-weight: 600; margin-bottom: 14px; }
+
+.filter-sidebar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 9px 0;
+  font-size: 14px;
+  color: var(--gray-500);
+}
+.filter-sidebar__row svg { opacity: 0.5; }
+.filter-sidebar__row.is-active { color: var(--black); font-weight: 600; }
+
+.filter-sidebar__slider { width: 100%; accent-color: var(--black); }
+.filter-sidebar__price-value { font-size: 13px; color: var(--gray-500); margin-top: 8px; }
+
+.filter-sidebar__colors { display: flex; flex-wrap: wrap; gap: 10px; }
+.filter-sidebar__swatch {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.filter-sidebar__swatch.is-active { outline: 2px solid var(--black); outline-offset: 2px; }
+
+.filter-sidebar__sizes { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-sidebar__size {
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-size: 13px;
+}
+.filter-sidebar__size.is-active { background: var(--black); color: var(--white); border-color: var(--black); }
+
+.filter-sidebar__apply { margin-top: 8px; }

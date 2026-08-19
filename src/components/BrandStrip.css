@@ -1,0 +1,19 @@
+.brand-strip { background: var(--black); padding: 28px 0; }
+.brand-strip__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.brand-strip__item {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.4vw, 28px);
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .brand-strip__row { justify-content: center; }
+}
